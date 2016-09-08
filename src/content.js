@@ -1,12 +1,24 @@
 replacements = [
-    // emprendedor
+    // emprendedor / emprendedora
     {'find': 'emprendimiento',        'replace': 'salchipaparismo'},
     {'find': 'Emprendimiento',        'replace': 'Salchipaparismo'},
     {'find': 'EMPRENDIMIENTO',        'replace': 'SALCHIPAPARISMO'},
 
-    {'find': 'emprendedor',        'replace': 'salchipapa'},
-    {'find': 'Emprendedor',        'replace': 'Salchipapa'},
-    {'find': 'EMPRENDEDOR',        'replace': 'SALCHIPAPA'},
+    {'find': 'emprendedores',        'replace': 'salchipaperos'},
+    {'find': 'Emprendedores',        'replace': 'Salchipaperos'},
+    {'find': 'EMPRENDEDORES',        'replace': 'SALCHIPAPEROS'},
+
+    {'find': 'emprendedor',        'replace': 'salchipapero'},
+    {'find': 'Emprendedor',        'replace': 'Salchipapero'},
+    {'find': 'EMPRENDEDOR',        'replace': 'SALCHIPAPERO'},
+
+    {'find': 'emprendedoras',        'replace': 'salchipaperas'},
+    {'find': 'Emprendedoras',        'replace': 'Salchipaperas'},
+    {'find': 'EMPRENDEDORAS',        'replace': 'SALCHIPAPERAS'},
+
+    {'find': 'emprendedora',        'replace': 'salchipapera'},
+    {'find': 'Emprendedora',        'replace': 'Salchipapera'},
+    {'find': 'EMPRENDEDORA',        'replace': 'SALCHIPAPERA'},
 
     // ROI
     {'find': 'roi',        'replace': 'salchipapa'},
@@ -49,8 +61,15 @@ var observeDOM = (function(){
     }
 })();
 
+// replace after the page is load
+replacements.forEach(function(elem, idx) {
+    findAndReplaceDOMText(document.body, {'find': elem.find, 'replace': elem.replace});
+});
+
+// replace at every change
 observeDOM(document.body ,function(node){
     replacements.forEach(function(elem, idx) {
         findAndReplaceDOMText(node, {'find': elem.find, 'replace': elem.replace});
     });
 });
+
