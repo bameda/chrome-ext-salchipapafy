@@ -1,4 +1,9 @@
 replacements = [
+    // emprender
+    {'find': 'emprender',        'replace': 'salchipapear'},
+    {'find': 'Emprender',        'replace': 'Salchipapear'},
+    {'find': 'EMPRENDER',        'replace': 'SALCHIPAPEAR'},
+
     // emprendedor / emprendedora
     {'find': 'emprendimiento',        'replace': 'salchipaparismo'},
     {'find': 'Emprendimiento',        'replace': 'Salchipaparismo'},
