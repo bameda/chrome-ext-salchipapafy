@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Salchipapafy",
-    "version": "0.2",
+    "version": "0.3",
     "author": "David Barragán Merino (@bameda)",
     "description": "A funny Chrome extensión to get away from buzzwords about the entrepreneur world",
     "homepage_url": "https://github.com/bameda/chrome-ext-salchipapafy",

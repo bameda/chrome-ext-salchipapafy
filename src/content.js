@@ -4,11 +4,12 @@ replacements = [
     {'find': 'Emprender',        'replace': 'Salchipapear'},
     {'find': 'EMPRENDER',        'replace': 'SALCHIPAPEAR'},
 
-    // emprendedor / emprendedora
+    // empren'dimiento
     {'find': 'emprendimiento',        'replace': 'salchipaparismo'},
     {'find': 'Emprendimiento',        'replace': 'Salchipaparismo'},
     {'find': 'EMPRENDIMIENTO',        'replace': 'SALCHIPAPARISMO'},
 
+    // empren'dedor  emprendedora
     {'find': 'emprendedores',        'replace': 'salchipaperos'},
     {'find': 'Emprendedores',        'replace': 'Salchipaperos'},
     {'find': 'EMPRENDEDORES',        'replace': 'SALCHIPAPEROS'},
@@ -26,17 +27,30 @@ replacements = [
     {'find': 'EMPRENDEDORA',        'replace': 'SALCHIPAPERA'},
 
     // ROI
-    {'find': 'roi',        'replace': 'salchipapa'},
-    {'find': 'Roi',        'replace': 'Salchipapa'},
-    {'find': 'ROI',        'replace': 'SALCHIPAPA'},
+    {'find': /\b(#)*(roi)\b/g,        'replace': 'salchipapa'},
+    {'find': /\b(#)*(Roi)\b/g,        'replace': 'Salchipapa'},
+    {'find': /\b(#)*(ROI)\b/g,        'replace': 'SALCHIPAPA'},
 
-    // startup
-    {'find': 'startup',        'replace': 'salchipapa'},
-    {'find': 'Startup',        'replace': 'Salchipapa'},
-    {'find': 'STARTUP',        'replace': 'SALCHIPAPA'},
-    {'find': 'StartUp',        'replace': 'SalchiPapa'},
+    // startu'p
+    {'find': 'startups',        'replace': 'salchipaperías'},
+    {'find': 'Startups',        'replace': 'Salchipaperías'},
+    {'find': 'STARTUPs',        'replace': 'SALCHIPAPERÍAS'},
+    {'find': 'StartUps',        'replace': 'SalchiPaperías'},
+
+    {'find': 'startup',        'replace': 'salchipapería'},
+    {'find': 'Startup',        'replace': 'Salchipapería'},
+    {'find': 'STARTUP',        'replace': 'SALCHIPAPERÍA'},
+    {'find': 'StartUp',        'replace': 'SalchiPapería'},
 
     // éxito
+    {'find': 'éxitos',        'replace': 'salchipapas'},
+    {'find': 'Éxitos',        'replace': 'Salchipapas'},
+    {'find': 'ÉXITOS',        'replace': 'SALCHIPAPAS'},
+
+    {'find': 'exitos',        'replace': 'salchipapas'},
+    {'find': 'Exitos',        'replace': 'Salchipapas'},
+    {'find': 'EXITOS',        'replace': 'SALCHIPAPAS'},
+
     {'find': 'éxito',        'replace': 'salchipapa'},
     {'find': 'Éxito',        'replace': 'Salchipapa'},
     {'find': 'ÉXITO',        'replace': 'SALCHIPAPA'},
